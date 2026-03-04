@@ -1,0 +1,251 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww28600\viewh15180\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="en">\
+<head>\
+<meta charset="UTF-8">\
+<meta name="viewport" content="width=device-width, initial-scale=1.0">\
+<title>Raw Canvas Studios</title>\
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">\
+\
+<style>\
+* \{\
+    margin: 0;\
+    padding: 0;\
+    box-sizing: border-box;\
+\}\
+\
+body \{\
+    font-family: 'Montserrat', sans-serif;\
+    background-color: #f5f1ea;\
+    color: #4b3f2f;\
+\}\
+\
+header \{\
+    background: #ffffff;\
+    padding: 20px 50px;\
+    display: flex;\
+    justify-content: space-between;\
+    align-items: center;\
+    border-bottom: 1px solid #e0d8c8;\
+\}\
+\
+.logo \{\
+    font-family: 'Playfair Display', serif;\
+    font-size: 28px;\
+    color: #b08d57;\
+\}\
+\
+nav a \{\
+    text-decoration: none;\
+    margin-left: 25px;\
+    color: #4b3f2f;\
+    font-weight: 500;\
+\}\
+\
+nav a:hover \{\
+    color: #b08d57;\
+\}\
+\
+.hero \{\
+    height: 85vh;\
+    background: linear-gradient(rgba(75,63,47,0.3), rgba(75,63,47,0.3)),\
+                url('https://images.unsplash.com/photo-1520697222861-59f7f6f3e2e3') center/cover no-repeat;\
+    display: flex;\
+    justify-content: center;\
+    align-items: center;\
+    text-align: center;\
+    color: white;\
+    padding: 20px;\
+\}\
+\
+.hero h1 \{\
+    font-family: 'Playfair Display', serif;\
+    font-size: 48px;\
+    margin-bottom: 20px;\
+\}\
+\
+.hero p \{\
+    font-size: 18px;\
+    margin-bottom: 30px;\
+\}\
+\
+.hero button \{\
+    padding: 12px 28px;\
+    border: none;\
+    background: #b08d57;\
+    color: white;\
+    font-size: 16px;\
+    cursor: pointer;\
+    border-radius: 4px;\
+\}\
+\
+.hero button:hover \{\
+    background: #8c6c3d;\
+\}\
+\
+.section \{\
+    padding: 80px 10%;\
+    text-align: center;\
+\}\
+\
+.section h2 \{\
+    font-family: 'Playfair Display', serif;\
+    font-size: 36px;\
+    margin-bottom: 40px;\
+\}\
+\
+.gallery \{\
+    display: grid;\
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));\
+    gap: 30px;\
+\}\
+\
+.art-card \{\
+    background: white;\
+    border-radius: 10px;\
+    overflow: hidden;\
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);\
+    transition: 0.3s;\
+\}\
+\
+.art-card:hover \{\
+    transform: translateY(-5px);\
+\}\
+\
+.art-card img \{\
+    width: 100%;\
+    height: 300px;\
+    object-fit: cover;\
+\}\
+\
+.art-card-content \{\
+    padding: 20px;\
+\}\
+\
+.art-card h3 \{\
+    font-family: 'Playfair Display', serif;\
+    margin-bottom: 10px;\
+\}\
+\
+.price \{\
+    color: #b08d57;\
+    font-weight: 600;\
+    margin: 10px 0;\
+\}\
+\
+.buy-btn \{\
+    padding: 10px 20px;\
+    border: none;\
+    background: #4b3f2f;\
+    color: white;\
+    cursor: pointer;\
+    border-radius: 4px;\
+\}\
+\
+.buy-btn:hover \{\
+    background: #b08d57;\
+\}\
+\
+.social-section \{\
+    background: #ffffff;\
+    padding: 60px 10%;\
+\}\
+\
+footer \{\
+    background: #4b3f2f;\
+    color: white;\
+    text-align: center;\
+    padding: 20px;\
+    margin-top: 40px;\
+\}\
+\
+@media(max-width:768px)\{\
+    .hero h1 \{\
+        font-size: 32px;\
+    \}\
+\}\
+</style>\
+</head>\
+\
+<body>\
+\
+<header>\
+    <div class="logo">Raw Canvas Studios</div>\
+    <nav>\
+        <a href="#gallery">Gallery</a>\
+        <a href="#social">Community</a>\
+        <a href="#contact">Contact</a>\
+    </nav>\
+</header>\
+\
+<section class="hero">\
+    <div>\
+        <h1>Faith. Texture. Scripture.</h1>\
+        <p>Handmade Christian canvas art designed to reflect your faith and elevate your space.</p>\
+        <button onclick="document.getElementById('gallery').scrollIntoView(\{behavior:'smooth'\})">\
+            View Collection\
+        </button>\
+    </div>\
+</section>\
+\
+<section class="section" id="gallery">\
+    <h2>Featured Collection</h2>\
+    <div class="gallery">\
+        \
+        <div class="art-card">\
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Art 1">\
+            <div class="art-card-content">\
+                <h3>"Be Still"</h3>\
+                <p>Psalm 46:10 \'97 Textured neutral canvas with gold detailing.</p>\
+                <div class="price">$75</div>\
+                <button class="buy-btn">Order Now</button>\
+            </div>\
+        </div>\
+\
+        <div class="art-card">\
+            <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29" alt="Art 2">\
+            <div class="art-card-content">\
+                <h3>"Walk by Faith"</h3>\
+                <p>2 Corinthians 5:7 \'97 Soft beige layered design.</p>\
+                <div class="price">$85</div>\
+                <button class="buy-btn">Order Now</button>\
+            </div>\
+        </div>\
+\
+        <div class="art-card">\
+            <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7" alt="Art 3">\
+            <div class="art-card-content">\
+                <h3>"Grace Upon Grace"</h3>\
+                <p>John 1:16 \'97 Elegant white and gold textured canvas.</p>\
+                <div class="price">$90</div>\
+                <button class="buy-btn">Order Now</button>\
+            </div>\
+        </div>\
+\
+    </div>\
+</section>\
+\
+<section class="social-section" id="social">\
+    <h2>Join Our Community</h2>\
+    <p>Follow Raw Canvas Studios on social media for new drops, behind-the-scenes, and faith inspiration.</p>\
+    <br>\
+    <button class="buy-btn">Follow on Instagram</button>\
+</section>\
+\
+<section class="section" id="contact">\
+    <h2>Custom Orders & Inquiries</h2>\
+    <p>Email us directly at <strong>rawcanvasstudios@email.com</strong></p>\
+</section>\
+\
+<footer>\
+    \'a9 2026 Raw Canvas Studios | Handmade with Faith \uc0\u55358 \u56590 \
+</footer>\
+\
+</body>\
+</html>}
